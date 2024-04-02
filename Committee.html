@@ -1,350 +1,385 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style1.css">
+    <!-- <link rel="stylesheet" href="style1.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="device-width, initial-scale=1.0">
     <style>
-        .image-container {
-            display: flex;
-            position: static;
-            padding-left: 40px;
-            padding-bottom: 35px;
-            padding-top: 5px;
-        }
+     
+   * {
+  font-family: Nunito, sans-serif;
+}
 
-        .image-container img {
-            max-width: 100%; /* Ensure images don't exceed the width of the container */
-            
-            margin-right: 400px;
-        }
+.responsive-cell-block {
+  min-height: 75px;
+}
+
+.text-blk {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  line-height: 25px;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: space-evenly;
+}
+
+.team-head-text {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.team-head-text {
+  line-height: 50px;
+  width: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 50px;
+  margin-left: 0px;
+}
+
+.container {
+  max-width: 1380px;
+  margin-top: 60px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 30px;
+  padding-bottom: 0px;
+  padding-left: 30px;
+}
+
+.card {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+}
+
+.card-container {
+  width: 280px;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  margin-left: 10px;
+}
+
+.name {
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.position {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+}
+
+.feature-text {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+  color: rgb(122, 122, 122);
+  line-height: 30px;
+}
+
+.social-icons {
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-image-wrapper {
+  clip-path: circle(50% at 50% 50%);
+  width: 130px;
+  height: 130px;
+}
+
+.team-member-image {
+  max-width: 100%;
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    width: 100%;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-left: 0px;
+  }
+ 
+}
+
     </style>
-    
 </head>
-<body>
-
-    
-    <div class="image-container" >
-        <div class="work" >
-            <img src="Kakadiya Aditi.jpg" alt="Image 1" height="100" width="100">
-            <div class="layer">
-                <h3>Kakadiya Aditi</h3>
-                <h4>Operations Department</h4>
-                <p>Membership and Nominating
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+<body  >
+    <div class="responsive-container-block container"  >
+        <p class="text-blk team-head-text">
+          Our Team
+        </p>
+        <div class="responsive-container-block">
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container" >
+            <div class="card" >
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="Kakadiya Aditi.jpg" alt="Image 1">
             </div>
-        </div>
-        <div class="work">
-            <img src="Krish Lakhani.jpg" alt="Image 2" height="100" width="100" >
-            <div class="layer">
-                <h3>Krish Lakhani</h3>
-                <h4>Operations Department</h4>
-                <p>Logistics and Planning
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+            <p class="text-blk name">
+                Kakadiya Aditi
+            </p>
+            <p class="text-blk position">
+                Operations Department
+            </p>
+            <p class="text-blk feature-text">
+                Membership and Nominating
+            </p>
+             
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!-- <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"> -->
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <!-- <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"> -->
+                </a>
+              </div>
             </div>
-        </div>
-       
-    </div>
-
-
-
-    <div class="image-container">
-        <div class="work">
-            <img src="Shubham_sadhwani_profile.jpg" alt="Image 5" height="100" width="100">
-            <div class="layer">
-                <h3>Shubham sadhwani</h3>
-                <h4>Operaitng Committee</h4>
-                <p>Technical
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="Krish Lakhani.jpg">
+              </div>
+              <p class="text-blk name">
+                Krish Lakhani
+              </p>
+              <p class="text-blk position">
+                Operations Department
+              </p>
+              <p class="text-blk feature-text">
+                Logistics and Planning
+              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!-- <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"> -->
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <!-- <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"> -->
+                </a>
+              </div>
             </div>
-        </div>
-        <div class="work">
-            <img src="Kanishkaa.jpg" alt="Image 6" height="100" width="100">
-            <div class="layer">
-                <h3>Kanishkaa</h3>
-                <h4>Operations Department</h4>
-                <p>Member
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="Shubham_sadhwani_profile.jpg">
+              </div>
+              <p class="text-blk name">
+                Shubham sadhwani
+              </p>
+              <p class="text-blk position">
+                Operations Department
+              </p>
+              <p class="text-blk feature-text">
+                Logistics and Planning
+              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!-- <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"> -->
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <!-- <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"> -->
+                </a>
+              </div>
             </div>
-        </div>
-        
-        <div class="work">
-            <img src="Tanishq Nayak .jpg" alt="Image 8" height="100" width="100">
-            <div class="layer">
-                <h4>Anchor</h4>
-                <p>Member
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="Kanishkaa.jpg">
+              </div>
+              <p class="text-blk name">
+                Kanishkaa
+              </p>
+              <p class="text-blk position">
+                Operations Department
+              </p>
+              <p class="text-blk feature-text">
+                Logistics and Planning
+              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!-- <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"> -->
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <!-- <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"> -->
+                </a>
+              </div>
             </div>
-        </div>
-    </div>    
-        
-    <div class="image-container">
-        <div class="work">
-            <img src="Krish Jagyasi.jpg" alt="Image 9" height="100" width="100">
-            <div class="layer">
-                <h3>Krish Jagyasi</h3>
-                <h4>Social Media</h4>
-                <p>Sub Com
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="Tanishq Nayak .jpg">
+              </div>
+              <p class="text-blk name">
+                Tanishq Nayak
+              </p>
+              <p class="text-blk position">
+                Anchor
+              </p>
+              <p class="text-blk feature-text">
+                Membership and Nominating              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!-- <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"> -->
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <!-- <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"> -->
+                </a>
+              </div>
             </div>
-        </div>
-            
-        <div class="work">
-            <img src="Shriya Choksi.jpg" alt="Image 10" height="100" width="100">
-            <div class="layer">
-                <h3>Shriya Choksi</h3>
-                <h4>Social Media</h4>
-                <p>Sub Com
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="Krish Jagyasi.jpg">
+              </div>
+              <p class="text-blk name">
+                Krish Jagyasi
+              </p>
+              <p class="text-blk position">
+                Social Media
+              </p>
+              <p class="text-blk feature-text">
+                Subcom              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!-- <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"> -->
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <!-- <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"> -->
+                </a>
+              </div>
             </div>
-        </div>
-            
-        <div class="work">
-            <img src="Harsh Dhandhukiya.jpg" alt="Image 11" height="100" width="100">
-            <div class="layer">
-                <h3>Harsh Dhandhukiya</h3>
-                <h4>Social Media</h4>
-                <p>Sub Com
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="Shriya Choksi.jpg">
             </div>
-        </div>
-            
-        <div class="work">
-            <img src="Manan Patel.jpg" alt="Image 12" height="100" width="100">
-            <div class="layer">
-                <h3>Manan Patel</h3>
-                <h4>Social Media</h3>
-                <p>Sub Com
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+            <p class="text-blk name">
+                Shriya Choksi
+            </p>
+            <p class="text-blk position">
+              Social Media
+            </p>
+            <p class="text-blk feature-text">
+              Subcom              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!-- <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"> -->
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <!-- <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"> -->
+                </a>
+              </div>
             </div>
-        </div>
-    </div>    
-            
-    
-    <div class="image-container"> 
-        <div class="work">
-            <img src="Jayesh.png" alt="Image 13" height="100" width="100">
-            <div class="layer">
-                <h3>Jayesh</h3>
-                <h4>Volunteer</h4>
-                <p>Sub Com
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="Manan Patel.jpg">
+              </div>
+              <p class="text-blk name">
+                Manan Patel
+              </p>
+              <p class="text-blk position">
+                Social Media
+              </p>
+              <p class="text-blk feature-text">
+                Subcom              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!-- <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"> -->
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <!-- <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"> -->
+                </a>
+              </div>
             </div>
-        </div>
-        
-        <div class="work">
-            <img src="Vedant.jpg" alt="Image 14" height="100" width="100">
-            <div class="layer">
-                <h3>Vedant</h3>
-                <h4>Volunteer</h4>
-                <p>Sub Com
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="Jayesh.png">
+              </div>
+              <p class="text-blk name">
+                Jayesh
+              </p>
+              <p class="text-blk position">
+                Volunteer
+              </p>
+              <p class="text-blk feature-text">
+                Subcom              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!-- <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"> -->
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <!-- <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"> -->
+                </a>
+              </div>
             </div>
-        </div>
-        <div class="work">
-            <img src="Jayesh.png" alt="Image 13" height="0" width="0">
-            <div class="layer">
-                <h3></h3>
-                <h4></h4>
-                <p>
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="Vedant.jpg">
+              </div>
+              <p class="text-blk name">
+                Vedant
+              </p>
+              <p class="text-blk position">
+                Volunteer
+              </p>
+              <p class="text-blk feature-text">
+                Subcom              </p>
+              <div class="social-icons">
+                <a href="https://www.twitter.com" target="_blank">
+                  <!-- <img class="twitter-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon.svg"> -->
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <!-- <img class="facebook-icon" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/Icon-1.svg"> -->
+                </a>
+              </div>
             </div>
+          </div>
+
         </div>
-        
-        <div class="work">
-            <img src="Vedant.jpg" alt="Image 14" height="0" width="0">
-            <div class="layer">
-                <h2></h2>
-                <h3></h3>
-                <p>
-                </p>
-                <a href="#"><i class="fa-solid fa-link"></i></a>
-            </div>
-            <a href="index.html" class="btn">Go Back</a>
-        </div>
-    </div>
-
-
-
-
-
-
-
-    
-
-    __________________________________________________________________________________________
-
-<!------------
-<div class="work">
-    <img src="Kakadiya Aditi.jpg" alt="Image 1" height="100" width="100">
-    <div class="layer">
-        <h2>Kakadiya Aditi</h2>
-        <h3>Nominating</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-<div class="work">
-    <img src="Krish Lakhani.jpg" alt="Image 2" height="100" width="100" >
-    <div class="layer">
-        <h2>Krish Lakhani</h2>
-        <h3>Membership</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-<div class="work">
-    <img src="EM- RISHABH NANDEKAR.jpg" alt="Image 3" height="100" width="100">
-    <div class="layer">
-        <h2>RISHABH NANDEKAR</h2>
-        <h3>EM Management</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-
-
-
-
-<div class="work">
-    <img src="Tanish Patel.jpg" alt="Image 4" height="100" width="100">
-    <div class="layer">
-        <h2>Tanish Patel</h2>
-        <h3>Technical</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-<div class="work">
-    <img src="Shubham_sadhwani_profile.jpg" alt="Image 5" height="100" width="100">
-    <div class="layer">
-        <h2>Shubham sadhwani</h2>
-        <h3>Technical</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-
-
-<div class="work">
-    <img src="Kanishkaa.jpg" alt="Image 6" height="100" width="100">
-    <div class="layer">
-        <h2>Kanishkaa</h2>
-        <h3>Publicity</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-
-
-<div class="work">
-    <img src="Paridhi Mehta.jpeg" alt="Image 7" height="100" width="100">
-    <div class="layer">
-        <h2>Paridhi Mehta</h2>
-        <h3>Assistant</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-
-
-<div class="work">
-    <img src="Tanishq Nayak .jpg" alt="Image 8" height="100" width="100">
-    <div class="layer">
-        <h3>Anchor</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-
-<div class="work">
-    <img src="Krish Jagyasi.jpg" alt="Image 9" height="100" width="100">
-    <div class="layer">
-        <h2>Krish Jagyasi</h2>
-        <h3>Social Media</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-
-<div class="work">
-    <img src="Shriya Choksi.jpg" alt="Image 10" height="100" width="100">
-    <div class="layer">
-        <h2>Shriya Choksi</h2>
-        <h3>Social Media</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-
-<div class="work">
-    <img src="Harsh Dhandhukiya.jpg" alt="Image 11" height="100" width="100">
-    <div class="layer">
-        <h2>Harsh Dhandhukiya</h2>
-        <h3>Social Media</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-
-<div class="work">
-    <img src="Manan Patel.jpg" alt="Image 12" height="100" width="100">
-    <div class="layer">
-        <h2>Manan Patel</h2>
-        <h3>Social Media</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-
-<div class="work">
-    <img src="Jayesh.png" alt="Image 13" height="100" width="100">
-    <div class="layer">
-        <h2>Jayesh</h2>
-        <h3>Volunteer</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
-
-<div class="work">
-    <img src="Vedant.jpg" alt="Image 14" height="100" width="100">
-    <div class="layer">
-        <h2>Vedant</h2>
-        <h3>Volunteer</h3>
-        <p>Sub Com
-        </p>
-        <a href="#"><i class="fa-solid fa-link"></i></a>
-    </div>
-</div>
----->
-    
+      </div>
 </body>
+
 </html>
-
-
